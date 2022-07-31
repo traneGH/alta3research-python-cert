@@ -25,6 +25,8 @@ https://api.nasa.gov/neo/rest/v1/feed?start_date=2022-06-15&end_date=2022-06-20&
 This is the main script to run this program
 python3 .\alta3research-pythoncert01.py 
 
+Dependencies script is asteroidInfo.py
+
 ### Prerequisites
 
 Needed to install the below:
