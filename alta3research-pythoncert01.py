@@ -70,7 +70,7 @@ def writeAsteroidsDataToCSVFiles(asteroidDic):
         csvwriter.writerow(fields) 
         # writing the data rows 
         csvwriter.writerows(rows)
-        print(f"{crayons.blue('Start Date:')} {crayons.red(eachDate)} - {crayons.blue('write data into this file')} {crayons.red(filename)}")
+        print(f"{crayons.blue('Start Date:')} {crayons.red(eachDate)} - {crayons.blue('write data into this file')} {crayons.red(fileName)}")
       except Exception as err:
         print("Error - ", err)
 
@@ -123,8 +123,14 @@ def main():
   print('Calling main ...')
   # collect string inputs from the user
   startdate_input, enddate_input = getInputData() 
-  resultDataDic = getResponseNearEarthObjects(startdate_input, enddate_input)  #Response JSON data as in dictionary type
+  
+  #Response JSON data as in dictionary type
+  resultDataDic = getResponseNearEarthObjects(startdate_input, enddate_input)  
+  
+  # Write the response data into JSON file under "files" folder
   writeAllDataToJsonFile(startdate_input, enddate_input, resultDataDic) 
+  
+  # Write the response data for each date, within the start and end date into csv file
   writeAsteroidsDataToCSVFiles(resultDataDic)
   
 # This condition specifies that the main() function will only be called if this script is run directly 
