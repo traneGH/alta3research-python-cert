@@ -29,8 +29,9 @@ python3 .\alta3research-pythoncert01.py
 
 Needed to install the below:
 
-python3 -m pip install requests
-python3 -m pip install crayons
+* python3 -m pip install requests
+
+* python3 -m pip install crayons
 
 Make sure the "files" folder is created 
 
