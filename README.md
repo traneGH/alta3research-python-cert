@@ -9,8 +9,8 @@ Asteroids - NeoWs (Near Earth Object Web Service) is a RESTful web service for n
 Collect a list of Asteroids based on their closest approach date to Earth within 6 days:
 - Collect the data from Neo - Feed's API.  
 - Passing the Start date and End Date and generate the output files, and will be saved under "files" folder
-- Store the response in JSON format into a file. File name pattern is "<start date>_<end date>_asteroid_info.json"  
-- Stored these data "Name, URL, Potential Hazardous Asteroid" into the csv file for each date. File name pattern is "asteroid_info_<specific date within the range from start to end date>.csv"
+- Store the response in JSON format into a file. File name pattern is "<start_date>_<end_date>_asteroid_info.json"  
+- Stored these data "Name, URL, Potential Hazardous Asteroid" into the csv file for each date. File name pattern is "asteroid_info_<specific_date_within_the_range_from_start_to_end_date>.csv"
 - Either use the register API key or use "DEMO_KEY".  DEMO_KEY has limited access
 
 Feed API's URL:
@@ -26,6 +26,10 @@ This is the main script to run this program
 python3 .\alta3research-pythoncert01.py 
 
 Dependencies script is asteroidInfo.py
+
+* For sample output, please see these 2 files: 
+    - output_sample1.jpg 
+    - output_sample2.jpg 
 
 ### Prerequisites
 
